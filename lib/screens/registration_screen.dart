@@ -24,11 +24,10 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
 
   @override
   void initState() {
-    userRoot = FirebaseFirestore.instance
-        .collection('OwnerData')
-        .doc(uniqueKey)
-        .collection("Menu")
-        .doc("hotelMenu");
+    userRoot =
+        FirebaseFirestore.instance.collection('OwnerData').doc(uniqueKey);
+    // .collection("Menu")
+    // .doc("hotelMenu");
 
     super.initState();
   }
